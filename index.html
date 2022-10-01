@@ -29,7 +29,7 @@
          <!-- Main section with character art, Character Details & Backstory -->
         <div id="top-section">
             <h2>Mort "The Tavern Keeper"</h2>
-            <img style="float: left; margin: 0px 15px 15px 0px;" src="https://www.fillmurray.com/200/300" alt = "Character Art" width="150" />
+            <div id="character-art"><img src="https://www.fillmurray.com/200/300" alt = "Character Art" /></div>
             <!-- Character Details -->
             <div id="description">
             <h3>Description</h3>
@@ -38,18 +38,27 @@
                     <li>Occupation: Barkeep, Information Dealer</li>
                     <li>Race/Gender: Human Male</li>
                     <li>
+                        CharacterAge();
                         <script>
+                            function CharacterAge(){
+                                w
+                            }
+
+
+
+                            CharacterAge(){
                             let charAge = prompt("How old is your NPC?")
                             if (charAge <= 1){
                                 console.log("No one in the village is that young")
                             }
-                            else if (charAge >= 100){
+                            else if (charAge >= 100) {
                                 console.log("No one in the village is that old")
                             }
-                            else if (charAge = void){
+                            else if (charAge != Number) {
                                 console.log("Try again")
+                                let charAge = prompt("How old is your NPC?")
                             }
-                            document.write ("Age: " + charAge);
+                            document.write ("Age: " + charAge);}
                         </script></li>
                     <li>Disposition: Well tempered, good hearted with a knack for making a deal when it benefits him. 
                         He owns a tavern called "Mort's Tavern" in the city and spends his time trying to take care of his patrons.
@@ -60,6 +69,8 @@
                          </li>
                 </ul>
             </div>
+            <div class="clearfix"></div>
+
             <div id="backstory">
                 <!-- Character Backstory and links to other characters -->
             <h3>Backstory</h3>

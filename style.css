@@ -56,10 +56,13 @@ header a:hover {
   }
 
   #top-section{
-    border: solid green;
-    align-items: baseline;
-    display: inline-block;
-  }
+        overflow: hidden;
+        background-color: #272424;
+        color: #bd905a;
+        border: 10px solid #bd905a;
+        border-top: 0px;
+        padding: 10px 10px;
+    }
 
   #top-section img{
     border: 5px solid black;
@@ -67,34 +70,92 @@ header a:hover {
   }
 
   #description{
-    border: solid gray;
     padding-left: 10%;
   }
-  #backstory{
-    border: solid blue;
-  }
+  #character-art {
+    overflow: hidden;
+    max-width: 25%;
+    border: 5px solid #bd905a;
+    float: left;
+    padding: 10px 10px;
+}
+#character-art img {
+    max-width: 100%;
+    height: auto;
+}
+#description {
+    overflow: hidden;
+    border: 5px solid #bd905a;
+    padding: 10px 10px;
+}
 
-  #audio{
-    background-color: steelblue;
-    border:10px, solid, #272424;
-  }
+.clearfix{
+    clear:both
+}
+#backstory {
+    overflow: hidden;
+    float: left;
+    border: 5px solid #bd905a;
+    padding: 10px 10px;
+}
 
-  #audio h2{
+#audio {
+    overflow: hidden;
+    background-color: #272424;
+    color: #bd905a;
+    border: 10px solid #bd905a;
+    border-top: 0px;
+    padding: 10px 10px;
+    float: center;
+}
 
-  }
+#audio h2 {
+    text-align: center;
+}
 
+#intro figcaption {
+    font-size: 22px;
+    padding-bottom: 12px; 
+}
+
+#intro p {
+    padding: 12px;
+    border: 5px solid #bd905a;
+    border-radius: 4px;
+}
+
+/* format the intro audio element*/
+#quest {
+    float: left;
+    text-align: center;
+    padding: 12px;
+}
+
+#quest figcaption {
+    font-size: 22px;
+    padding-bottom: 12px; 
+}
+
+#quest p {
+    padding: 12px;
+    border: 5px solid #bd905a;
+    border-radius: 4px;
+}
+
+/* Style the footer */
 footer {
     overflow: hidden;
     background-color: #272424;
     width: 100%;
     padding: 10px 10px;
+    border: 10px solid #bd905a;
     float: left;
     text-align: center;
     padding: 12px;
     text-decoration: none;
     font-size: 18px; 
     line-height: 25px;
-    border-radius: 4px;
+    color: #bd905a;
 }
 
 footer p{
