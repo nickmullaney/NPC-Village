@@ -9,8 +9,15 @@
 </head>
 <body>
     <header>
-        <img src="Images/NPC Village.gif" alt="NPC Village Logo"> 
+        <section id = "welcome">
+            <script>
+                let userName = prompt("What is your name Adventurer?")
+                document.write ("Hello Adventurer " + userName + ", welcome to NPC Village")
+            </script>
+        </section>
+        <img src="Images/NPC Village.gif" alt="NPC Village Logo" width="150px" height="150px"> 
         <!-- Links to other Characters and someone else's website -->
+      
         <nav>
             <a href="https://matthew-c-austin.github.io/cf102-website/">Guildenstern</a>
             <a href="#">Torvald the Magnificent</a>
@@ -20,17 +27,30 @@
 
     <main>
          <!-- Main section with character art, Character Details & Backstory -->
-        <section id="top-section">
+        <div id="top-section">
             <h2>Mort "The Tavern Keeper"</h2>
-            <img src="https://www.fillmurray.com/200/300" alt="Character Art">
+            <img style="float: left; margin: 0px 15px 15px 0px;" src="https://www.fillmurray.com/200/300" alt = "Character Art" width="150" />
             <!-- Character Details -->
-            <section id="description">
+            <div id="description">
             <h3>Description</h3>
         
                 <ul>
                     <li>Occupation: Barkeep, Information Dealer</li>
                     <li>Race/Gender: Human Male</li>
-                    <li>Age: 56</li>
+                    <li>
+                        <script>
+                            let charAge = prompt("How old is your NPC?")
+                            if (charAge <= 1){
+                                console.log("No one in the village is that young")
+                            }
+                            else if (charAge >= 100){
+                                console.log("No one in the village is that old")
+                            }
+                            else if (charAge = void){
+                                console.log("Try again")
+                            }
+                            document.write ("Age: " + charAge);
+                        </script></li>
                     <li>Disposition: Well tempered, good hearted with a knack for making a deal when it benefits him. 
                         He owns a tavern called "Mort's Tavern" in the city and spends his time trying to take care of his patrons.
                     He focuses on their happiness and making sure they feel at home at Mort's </li>
@@ -39,14 +59,17 @@
                         He leans on a gnarled looking walking stick that he has been known to use to "calm down" unruly patrons.
                          </li>
                 </ul>
-            </section>
-            <!-- Character Backstory and links to other characters -->
+            </div>
+            <div id="backstory">
+                <!-- Character Backstory and links to other characters -->
             <h3>Backstory</h3>
             <p> Once an adventurer in the old days, he was pretty well known. 
                 After falling in love with a local lady he was forced to leave his home city when the lord she was promised to found out.
                 He traveled across the land taking odd jobs here and there until he grew tired of that life. 
                 He hung up his cloak, bought his favorite watering hole and kept the place going so that everyone feels welcome. </p>
-        </section>
+            </div>
+            
+        </div>
         <!-- 2nd section with audio links and audio transcripts -->
         <section class="audio">
             <!-- Hooks might not be the best word -->
@@ -75,6 +98,7 @@
     </main>
     <!-- Footer basic llc info -->
     <footer>
+        <script>document.write  ("Thanks for stopping by " + userName);</script>
         <p>&copy; Nick & Matt, Villagers llc 2022</p>
     </footer>
     

@@ -7,6 +7,7 @@ main{
     border:10px solid rgb(0, 0, 0);    
 }
 
+
 /* Style the header */
 header {
     overflow: hidden;
@@ -18,9 +19,7 @@ header {
 
 /* Style the logo image */
 header img {
-    width: 24%;
-    max-width: 100%;
-    height: auto;
+    max-height: 100%;
     padding: 10px;
 }
 
@@ -42,6 +41,11 @@ header a {
     border-radius: 4px;  
 }
 
+#welcome {
+    padding-left: 30%;
+    color: #bd905a;
+}
+
 header a:hover {
     background-color: #ddd;
     color: black;
@@ -51,23 +55,31 @@ header a:hover {
     color: white;
   }
 
-  .description{
-    padding-left: 10 px;
-
+  #top-section{
+    border: solid green;
+    align-items: baseline;
+    display: inline-block;
   }
 
   #top-section img{
-    margin:  10px;
-    border:10px, solid, #bd905a;
-    float: left;
+    border: 5px solid black;
+   
   }
 
-  .audio{
+  #description{
+    border: solid gray;
+    padding-left: 10%;
+  }
+  #backstory{
+    border: solid blue;
+  }
+
+  #audio{
     background-color: steelblue;
     border:10px, solid, #272424;
   }
 
-  .audio h2{
+  #audio h2{
 
   }
 
