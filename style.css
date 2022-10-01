@@ -1,61 +1,65 @@
 body {
-    background-color: rgb(221, 195, 157);
-    font-family:fantasy;
-    padding: 10px;
-    margin: 20px;
-}
-/* Can select multiple sections with commas */
-header, main, footer{
-    margin: 10px;
-    padding: 10px;
-    size: auto;
+    margin: 0;
 }
 
-header{
-    border: 5px solid green;
-    margin: 10px;
-    height: fit-content;
+/* Style the header */
+header {
+    overflow: hidden;
+    background-color: #272424;
+    padding: 10px 10px;
+    text-align: left;
+    position: relative;
 }
 
-h1{
-    float: left; 
+/* Style the logo image */
+header img {
+    width: 24%;
+    max-width: 100%;
+    height: auto;
 }
 
-h2{
-    text-align: center;
-}
-
-nav{
-    margin: 20px;
-}
-
-/* Selects all the anchor tags in the nav bar */
-nav a{
-    text-decoration: none;
-}
-
-a{
-    margin-left: 20px;
+nav {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
     
 }
 
-main{
-    border: 5px solid aqua;
-    
-}
-
-footer{
-    border: 5px solid purple;
-}
-#top-section{
-    background-color: coral;
-}
-img {
+header a {
     float: left;
+    color: #bd905a;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+   
 }
-.audio{
-    background-color: steelblue;
-    /* This makes the block fit to the size of the item */
-    display: inline-block;
-    width: 50%;
+
+header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  header a.active {
+    color: white;
+  }
+
+footer {
+    overflow: hidden;
+    background-color: #272424;
+    width: 100%;
+    padding: 10px 10px;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+footer p{
+    color: #bd905a;
 }
