@@ -1,4 +1,61 @@
 body {
     background-color: rgb(221, 195, 157);
     font-family:fantasy;
+    padding: 10px;
+    margin: 20px;
+}
+/* Can select multiple sections with commas */
+header, main, footer{
+    margin: 10px;
+    padding: 10px;
+    size: auto;
+}
+
+header{
+    border: 5px solid green;
+    margin: 10px;
+    height: fit-content;
+}
+
+h1{
+    float: left; 
+}
+
+h2{
+    text-align: center;
+}
+
+nav{
+    margin: 20px;
+}
+
+/* Selects all the anchor tags in the nav bar */
+nav a{
+    text-decoration: none;
+}
+
+a{
+    margin-left: 20px;
+    
+}
+
+main{
+    border: 5px solid aqua;
+    
+}
+
+footer{
+    border: 5px solid purple;
+}
+#top-section{
+    background-color: coral;
+}
+img {
+    float: left;
+}
+.audio{
+    background-color: steelblue;
+    /* This makes the block fit to the size of the item */
+    display: inline-block;
+    width: 50%;
 }
