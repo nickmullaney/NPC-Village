@@ -13,7 +13,7 @@
             <script>
                 let userName = prompt("What is your name Adventurer?")
                 document.write ("Hello Adventurer " + userName + ", welcome to NPC Village")
-                 let charAge = 37
+                 
                  function characterAge() {
                                 charAge = random();
                                 console.log(charAge);
@@ -45,8 +45,12 @@
                 <ul>
                     <li>Occupation: Barkeep, Information Dealer</li>
                     <li>Race/Gender: Human Male</li>
-                    <li><script>document.write ("Age: " + charAge)</script>
+                    <li>
+                        <script>
+                            let charAge = prompt("How old is this NPC?")
+                            document.write ("Age: " + charAge)</script>
                         <button onclick="characterAge()">Randomize Age</button>
+                        
                     </li>
                     <li>Disposition: Well tempered, good hearted with a knack for making a deal when it benefits him. 
                         He owns a tavern called "Mort's Tavern" in the city and spends his time trying to take care of his patrons.
@@ -99,7 +103,7 @@
     <footer>
         <script>
             let newUserName = prompt("What do we call you when you leave this place?")
-            document.write  ("Thanks for stopping by " + userName + "The magnifcent");</script>
+            document.write  ("Thanks for stopping by " + newUserName + " The magnifcent");</script>
         <p>&copy; Nick & Matt, Villagers llc 2022</p>
     </footer>
     
