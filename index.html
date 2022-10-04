@@ -6,22 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick Mullaney & Matt Austin's 102n65 Website NPC Village</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <header>
         <section id = "welcome">
-            <script>
-                let userName = prompt("What is your name Adventurer?")
-                document.write ("Hello Adventurer " + userName + ", welcome to NPC Village")
-                 
-                 function characterAge() {
-                                charAge = random();
-                                console.log(charAge);
-                            }
-                function random(){
-                    return(Math.floor(Math.random() * 100));
-                            }    
-            </script>
+            <script>yourName()</script>
         </section>
         <img src="Images/NPC Village.gif" alt="NPC Village Logo" width="150px" height="150px"> 
         <!-- Links to other Characters and someone else's website -->
@@ -45,12 +35,8 @@
                 <ul>
                     <li>Occupation: Barkeep, Information Dealer</li>
                     <li>Race/Gender: Human Male</li>
-                    <li>
-                        <script>
-                            let charAge = prompt("How old is this NPC?")
-                            document.write ("Age: " + charAge)</script>
+                    <li><script>getNpcAge()</script>
                         <button onclick="characterAge()">Randomize Age</button>
-                        
                     </li>
                     <li>Disposition: Well tempered, good hearted with a knack for making a deal when it benefits him. 
                         He owns a tavern called "Mort's Tavern" in the city and spends his time trying to take care of his patrons.
@@ -101,9 +87,7 @@
     </main>
     <!-- Footer basic llc info -->
     <footer>
-        <script>
-            let newUserName = prompt("What do we call you when you leave this place?")
-            document.write  ("Thanks for stopping by " + newUserName + " The magnifcent");</script>
+        <script>farewellName()</script>
         <p>&copy; Nick & Matt, Villagers llc 2022</p>
     </footer>
     
