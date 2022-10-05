@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nick Mullaney & Matt Austin's 102n65 Website NPC Village</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div id = "welcome">
+            <script>yourName()</script>
+        </div>
+        <img src="Images/NPC Village.gif" alt="NPC Village Logo" width="150px" height="150px"> 
+        <!-- Links to other Characters and someone else's website -->
+      
+        <nav>
+            <a href="https://matthew-c-austin.github.io/cf102-website/">Guildenstern</a>
+            <a href="#">Torvald the Magnificent</a>
+            <a href="#">Illiana Elsoma, "The Lightwielder"</a>
+        </nav>
+    </header>
+
+    <main>
+         <!-- Main section with character art, Character Details & Backstory -->
+        <div id="top-section">
+            <h2>Welcome to the Village of Rangol</h2>
+            <div id="character-art"><img src="Images/Village-1.jpg" alt = "Village Art" /></div>
+            <!-- Character Details -->
+            <div id="description">
+            <h3>Description</h3>
+        
+                <ul>
+                    <li>Occupation: Barkeep, Information Dealer</li>
+                    <li>Race/Gender: Human Male</li>
+                    <li><script>getNpcAge()</script>
+                        <button onclick="characterAge()">Randomize Age</button>
+                    </li>
+                    <li>Disposition: Well tempered, good hearted with a knack for making a deal when it benefits him. 
+                        He owns a tavern called "Mort's Tavern" in the city and spends his time trying to take care of his patrons.
+                    He focuses on their happiness and making sure they feel at home at Mort's </li>
+                    <li>Appearance: A portly man with a white shirt, stained yellow, brown pants and a brass buckle belt. 
+                        Thinning short grey hair with a bald spot in the center and deep brown eyes that center a slightly bulbous nose.
+                        He leans on a gnarled looking walking stick that he has been known to use to "calm down" unruly patrons.
+                         </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+
+            <div id="backstory">
+                <!-- Character Backstory and links to other characters -->
+            <h3>Backstory</h3>
+            <p> Once an adventurer in the old days, he was pretty well known. 
+                After falling in love with a local lady he was forced to leave his home city when the lord she was promised to found out.
+                He traveled across the land taking odd jobs here and there until he grew tired of that life. 
+                He hung up his cloak, bought his favorite watering hole and kept the place going so that everyone feels welcome. </p>
+            </div>
+            
+        </div>
+        <!-- 2nd section with audio links and audio transcripts -->
+        <section class="audio">
+            <!-- Hooks might not be the best word -->
+        <h2>Information & Hooks</h2>
+            <section>    
+            <figure>
+                    <figcaption>Introduction</figcaption>
+                <audio 
+                    controls 
+                    src="#">Introduction
+                </audio>
+                <p>Transcript of Audio</p>
+            </figure>
+            </section>
+            <section>
+                <figure>
+                    <figcaption>Quest</figcaption>
+                <audio 
+                    controls 
+                    src="#">Quest
+                </audio>
+                <p>Transcript of Audio</p>
+                </figure>
+            </section>                
+            </section>            
+    </main>
+    <!-- Footer basic llc info -->
+    <footer>
+        <script>farewellName()</script>
+        <p>&copy; Nick & Matt, Villagers llc 2022</p>
+    </footer>
+    
+</body>
+<!-- <script id-="namechange">window.onload = function() {  
+
+    /* This bit of code prompts the user to confirm that they want to change the NPC name, and if so
+    replaces all occurences of the previous name with the prompted name. */
+    let npcName = document.getElementById('npcName').innerHTML
+    changeName = confirm("Do you want to change the NPC's name? It is currently " + npcName + ".")
+    if (changeName === true) {
+        let npcName = prompt("What do you want your NPC's name to be?")
+        document.body.innerHTML = document.body.innerHTML.replaceAll('Guildenstern',npcName) 
+    }} 
+</script> -->
+
+</html>
