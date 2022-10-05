@@ -7,8 +7,6 @@ main{
     background-image: url(Images/Village-1.jpg);
     background-size: cover;
     background-color: #bd905a;
-    
-    border:10px solid rgb(0, 0, 0);    
 }
 
 
@@ -56,6 +54,7 @@ header a {
 header a:hover {
     background-color: #ddd;
     background-clip: content-box;
+    padding: 10px;
     color: black;
   }
   
@@ -65,17 +64,12 @@ header a:hover {
 
   #top-section{
         overflow: hidden;
-        background-color: #272424;
+        background-color: #272424a2;
         color: #bd905a;
         border: 10px solid #bd905a;
         border-top: 0px;
         padding: 10px 10px;
     }
-
-  #top-section img{
-    border: 5px solid black;
-   
-  }
 
   #description{
     padding-left: 10%;
@@ -166,7 +160,23 @@ footer {
     color: #bd905a;
 }
 
-footer p{
+footer p {
     background-image: url(Images/Village-1.jpg);
     color: #bd905a;
+}
+
+#moreNpc {
+    background-color: #27242400;
+    width: 100%;
+    padding: 10px 10;
+}
+
+.agnes {
+    border-color: #fafafa;
+    border: 10px solid #bd905a6c;
+    width: 100px; 
+    display: inline-flexbox;
+    padding: 10px;
+    justify-content: space-between;
+
 }

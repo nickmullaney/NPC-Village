@@ -39,4 +39,12 @@ function characterAge() {
             
 function random(){
     return(Math.floor(Math.random() * 100));
-            }    
+            } 
+
+function moreNpc(){
+    let gimme = prompt("How many additional Villagers do you want?");
+    for(let i = 0; i < gimme; i++){
+        document.write("<img class='agnes' img src ='Images/Agnes.jpg' alt ='NPC' />");
+}
+}
+            
