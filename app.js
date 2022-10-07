@@ -4,7 +4,9 @@ document.write ("Hello Adventurer " + userName + ", welcome to NPC Village")
 }
 
 function npcAge(){
-    let charAge = prompt("How old is this NPC?")
+    let valid = false;
+    while (!valid){
+        let charAge = prompt("How old is this NPC?")
         if(charAge > 1000){
             console.log("That character is ancient!")
             return charAge;
@@ -13,14 +15,14 @@ function npcAge(){
             console.log("Tis but a child!")
             return charAge;
         }
-        else if(charAge >0 || charAge <1000){
+        else if(charAge > 0 || charAge <1000){
             return charAge;
         }
         else{alert ("Let's try that again?")
-        charAge = npcAge();
-        return charAge;
     }
 }
+
+    
 
 function getNpcAge(){
 let charAge = npcAge();
@@ -42,9 +44,14 @@ function random(){
             } 
 
 function moreNpc(){
+    let valid = false;
+    while(!valid){
     let gimme = prompt("How many additional Villagers do you want?");
     for(let i = 0; i < gimme; i++){
+        if(gimme > 0){
+        valid = true;}
         document.write("<img class='agnes' img src ='Images/Agnes.jpg' alt ='NPC' />");
+        }
+    }
 }
 }
-            
