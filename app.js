@@ -5,7 +5,7 @@ document.write ("Hello Adventurer " + userName + ", welcome to NPC Village")
 
 
 function npcAge(){
-    let valid = false;
+    let valid = null;
     let charAge = prompt("How old is this NPC?")
     while(!valid){
         if(charAge > 1000){
@@ -26,8 +26,19 @@ function npcAge(){
     }
     }
 
+    
+    // In the works
+function npcAge2(){
+    let charAge = prompt("How old is this NPC?");
+    //                    not equal NotANumber
+    while (isNaN(charAge)){
+        charAge = prompt("Let's try that again?")
+    }
+    return charAge
+}
+
 function getNpcAge(){
-let charAge = npcAge();
+let charAge = npcAge2();
 document.write ("Age: " + charAge)
 }
 
